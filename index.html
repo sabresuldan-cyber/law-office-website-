@@ -3,389 +3,679 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> مكتب المستشار القانوني | صبري للمحاماة والاستشارات القانونية السلطان</title>
+    <meta name="description" content="مكتب المستشار القانوني صبري السلطان - محاماة واستشارات قانونية متخصصة في تحرير العقود، الترافع أمام المحاكم، الاستشارات القانونية، كتابة العرائض والطعون، القسمة والتحكيم في صنعاء">
+    <meta name="keywords" content="محامي، مستشار قانوني، محاماة، استشارات قانونية، تحرير عقود، ترافع، محاكم، دعاوى، قسمة، تحكيم، صنعاء، اليمن">
+    <meta name="author" content="المستشار صبري السلطان">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="مكتب المستشار القانوني | صبري للمحاماة والاستشارات القانونية السلطان">
+    <meta property="og:description" content="مكتب مستشار قانوني متخصص في المحاماة والاستشارات القانونية بكافة أنواعها في صنعاء واليمن">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <!-- Canonical URL to avoid duplicate content -->
+    <link rel="canonical" href="https://www.sabrialsultan-lawyer.com">
+    
+    <title>مكتب المستشار القانوني | صبري للمحاماة والاستشارات القانونية السلطان</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "مكتب المستشار القانوني صبري السلطان",
+      "description": "مكتب مستشار قانوني متخصص في المحاماة والاستشارات القانونية بكافة أنواعها",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "صنعاء - بني الحارث - جوار مجمع دبي",
+        "addressLocality": "صنعاء",
+        "addressCountry": "اليمن"
+      },
+      "telephone": "+967-774968713",
+      "email": "sabresuldan@gmail.com",
+      "areaServed": "اليمن",
+      "url": "https://www.sabrialsultan-lawyer.com",
+      "openingHours": "Sa-Th 08:00-16:00"
+    }
+    </script>
+    
     <style>
         :root {
-            --primary: #1a237e;
-            --secondary: #d4af37;
-            --dark: #0d1451;
+            --primary: #0d1b3e;
+            --secondary: #c9a86d;
+            --accent: #8e1c1c;
+            --dark: #0a1429;
             --light: #f5f5f7;
             --gray: #6c757d;
+            --gold-light: #e6d7b8;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--light);
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-weight: 400;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         /* Header Styles */
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: white;
-            padding: 1rem 0;
+            padding: 0.8rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid var(--secondary);
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
-        .logo {
+
+        .logo-container {
             display: flex;
             align-items: center;
+            gap: 15px;
         }
-        
+
+        .yemen-logo {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ce1126 0%, #ffffff 50%, #000000 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+            text-align: center;
+            border: 2px solid var(--secondary);
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .logo h1 {
-            font-size: 1.5rem;
-            margin-right: 10px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.3;
         }
-        
+
         .logo span {
             color: var(--secondary);
+            font-size: 1.1rem;
         }
-        
+
+        .logo p {
+            font-size: 0.8rem;
+            margin: 0;
+            color: var(--gold-light);
+        }
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
-            margin-left: 1.5rem;
+            margin-left: 1.8rem;
         }
-        
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 5px 10px;
+            padding: 8px 12px;
             border-radius: 4px;
+            font-size: 1.05rem;
         }
-        
+
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(201, 168, 109, 0.2);
+            color: var(--secondary);
         }
-        
+
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(13, 20, 81, 0.8), rgba(13, 20, 81, 0.8)), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background: linear-gradient(rgba(13, 27, 62, 0.85), rgba(13, 27, 62, 0.9)), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
             text-align: center;
-            padding: 8rem 1rem 5rem;
-            margin-top: 60px;
+            padding: 10rem 1rem 6rem;
+            margin-top: 70px;
+            position: relative;
         }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero p {
+
+        .quran-verse {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            font-style: italic;
+            color: var(--gold-light);
             font-size: 1.2rem;
+            padding: 0 20px;
             max-width: 800px;
-            margin: 0 auto 2rem;
+            margin: 0 auto;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
-        
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--gold-light);
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
         .btn {
             display: inline-block;
-            background-color: var(--secondary);
+            background: linear-gradient(to bottom, var(--secondary), #b08d57);
             color: var(--dark);
-            padding: 12px 30px;
+            padding: 15px 35px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
             border: 2px solid var(--secondary);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.1rem;
         }
-        
+
         .btn:hover {
-            background-color: transparent;
+            background: transparent;
             color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
-        
+
         /* Sections */
         section {
-            padding: 5rem 0;
+            padding: 6rem 0;
         }
-        
+
         .section-title {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
-        
+
         .section-title h2 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: var(--primary);
             position: relative;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
-        
+
         .section-title h2::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--secondary);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 2px;
         }
-        
+
         /* About Section */
         .about-content {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 2rem;
+            gap: 3rem;
         }
-        
+
         .about-text {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .about-text h3 {
             color: var(--primary);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
-        
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
         .qualifications {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-top: 2rem;
+            background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin-top: 2.5rem;
+            border-left: 5px solid var(--secondary);
         }
-        
+
         .qualifications h4 {
             color: var(--primary);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.8rem;
             display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
-        
+
         .qualifications ul {
             list-style-type: none;
         }
-        
+
         .qualifications ul li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            padding-left: 2.2rem;
             position: relative;
+            font-size: 1.1rem;
+            line-height: 1.7;
         }
-        
+
         .qualifications ul li::before {
             content: '✓';
             color: var(--secondary);
             position: absolute;
             left: 0;
             font-weight: bold;
+            font-size: 1.3rem;
         }
-        
+
+        /* CV Section */
+        .cv-section {
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            padding: 4rem 0;
+        }
+
+        .cv-container {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .cv-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cv-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .cv-item h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cv-item p {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
         /* Services Section */
         .services {
-            background-color: #f8f9fa;
+            background: linear-gradient(to bottom, #f8f9fa, #f1f3f5);
         }
-        
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
         }
-        
+
         .service-card {
-            background-color: white;
-            border-radius: 10px;
+            background: linear-gradient(to bottom, #ffffff, #fcfcfc);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+            transition: all 0.4s ease;
+            border: 1px solid #eee;
         }
-        
+
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-12px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .service-icon {
-            background-color: var(--primary);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: var(--secondary);
-            height: 80px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
-        
+
         .service-content {
-            padding: 1.5rem;
+            padding: 2rem;
         }
-        
+
         .service-content h3 {
             color: var(--primary);
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
-        
+
+        .service-content p {
+            color: var(--gray);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
         /* Contact Section */
         .contact-content {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 3rem;
         }
-        
+
         .contact-info {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .contact-info h3 {
             color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
-        
-        .contact-details {
             margin-bottom: 2rem;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
-        
+
+        .contact-details {
+            margin-bottom: 2.5rem;
+        }
+
         .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.8rem;
         }
-        
+
         .contact-icon {
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary);
-            color: white;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: var(--secondary);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 1rem;
+            margin-left: 1.5rem;
+            font-size: 1.3rem;
+            flex-shrink: 0;
         }
-        
+
+        .contact-text h4 {
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-text p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
         .contact-form {
             flex: 1;
             min-width: 300px;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            background: linear-gradient(to bottom, #ffffff, #fcfcfc);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eee;
         }
-        
+
+        .contact-form h3 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
         }
-        
+
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             color: var(--dark);
             font-weight: 500;
+            font-size: 1.1rem;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
         }
-        
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(201, 168, 109, 0.2);
+            outline: none;
+        }
+
         .form-group textarea {
-            min-height: 150px;
+            min-height: 180px;
             resize: vertical;
         }
-        
+
         /* Footer */
         footer {
-            background-color: var(--dark);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: white;
-            padding: 3rem 0 1rem;
+            padding: 4rem 0 1.5rem;
+            border-top: 3px solid var(--secondary);
         }
-        
+
         .footer-content {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
-        
+
         .footer-section {
             flex: 1;
             min-width: 250px;
         }
-        
+
         .footer-section h3 {
             color: var(--secondary);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
             position: relative;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
         }
-        
+
         .footer-section h3::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 40px;
-            height: 2px;
+            width: 50px;
+            height: 3px;
             background-color: var(--secondary);
+            border-radius: 2px;
         }
-        
+
+        .footer-section p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.9rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--gold-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--secondary);
+            padding-right: 8px;
+        }
+
         .footer-bottom {
             text-align: center;
-            padding-top: 1.5rem;
+            padding-top: 2.5rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.05rem;
         }
-        
+
         /* Responsive */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-            }
-            
-            nav ul {
-                margin-top: 1rem;
-            }
-            
-            nav ul li {
-                margin: 0 0.5rem;
-            }
-            
-            .hero h2 {
-                font-size: 2rem;
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.3rem;
             }
             
             .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-container {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 0.8rem;
+            }
+
+            .hero {
+                padding: 8rem 1rem 4rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .quran-verse {
                 font-size: 1rem;
+                top: 10px;
+            }
+
+            .contact-content,
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .section-title h2 {
+                font-size: 1.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo h1 {
+                font-size: 1.2rem;
+            }
+            
+            .logo span {
+                font-size: 1rem;
+            }
+            
+            nav ul li a {
+                padding: 6px 8px;
+                font-size: 0.95rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+            }
+            
+            .service-card {
+                min-width: 100%;
             }
         }
     </style>
@@ -394,12 +684,19 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <h1>مستشار القانوني | <span>صبري السلطان</span></h1>
+            <div class="logo-container">
+                <div class="yemen-logo">
+                    الجمهورية اليمنية
+                </div>
+                <div class="logo">
+                    <h1>المستشار القانوني | <span>صبري السلطان</span></h1>
+                    <p>مكتب المحاماة والاستشارات القانونية</p>
+                </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">عن المكتب</a></li>
+                    <li><a href="#cv">السيرة الذاتية</a></li>
                     <li><a href="#services">خدماتنا</a></li>
                     <li><a href="#contact">اتصل بنا</a></li>
                 </ul>
@@ -409,9 +706,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="quran-verse">
+            "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ بِالْقِسْطِ شُهَدَاءَ لِلَّهِ وَلَوْ عَلَى أَنْفُسِكُمْ أَوِ الْوَالِدَيْنِ وَالْأَقْرَبِينَ"
+        </div>
         <div class="container">
-            <h2>حماية حقوقك قانونياً هي مهمتنا الأولى</h2>
-            <p>مكتب مستشار القانوني صبري السلطان يقدم أرقى الخدمات القانونية والاستشارات المهنية، بنخبة من الخبراء القانونيين لتأمين حقوقك وضمان مصالحك.</p>
+            <h1>حماية حقوقكم القانونية هي رسالتنا وهدفنا</h1>
+            <p>مكتب المستشار القانوني صبري السلطان يقدم أرقى الخدمات القانونية والاستشارات المهنية، بنخبة من الخبراء القانونيين لتأمين حقوقكم وضمان مصالحكم.</p>
             <a href="#contact" class="btn">احصل على استشارة مجانية</a>
         </div>
     </section>
@@ -423,19 +723,57 @@
                 <h2>عن المستشار</h2>
             </div>
             <div class="about-content">
+                   <div class="section-title">
+                <h2>عن المستشار</h2>
+            </div>
+            <div class="about-content">
                 <div class="about-text">
                     <h3>المستشار القانوني / صبري السلطان</h3>
-                    <p>محامٍ ومستشار قانوني بخبرة واسعة في المجال القانوني، حاصل على درجة الماجستير في الإدارة العامة من الكلية العربية السورية، ومدرس مساعد في علم الجريمة والعقاب بالكلية اليمنية السورية للحقوق.</p>
-                    <p>نلتزم في مكتبنا بتقديم خدمات قانونية متكاملة تتميز بالدقة والاحترافية والسرية التامة، مع التركيز على تحقيق أفضل النتائج لعملائنا الكرام.</p>
-                    
+                    <p>محامٍ ومستشار قانوني مخضرم يحمل بين جنباته خبرة قانونية واسعة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية. يتمتع بسجل حافل من النجاحات في القضايا الكبرى والمعقدة.</p>
+                    <p>حاصل على درجة الماجستير في الإدارة العامة من الكلية العربية السورية، ودرجة البكالوريوس في الشريعة والقانون من جامعة صنعاء. كما يعمل كمدرس مساعد في علم الجريمة والعقاب بالكلية اليمنية السورية للحقوق.</p>
+                    <p>نلتزم في مكتبنا بتقديم خدمات قانونية متكاملة تتميز بالدقة والاحترافية والسرية التامة، مع التركيز على تحقيق أفضل النتائج لعملائنا الكرام من خلال فريق متكامل من المحامين المتخصصين.</p>
+
                     <div class="qualifications">
                         <h4>المؤهلات العلمية</h4>
                         <ul>
-                            <li>شهادة في الشريعة والقانون من جامعة صنعاء</li>
-                            <li>ماجستير في الإدارة العامة من الكلية العربية السورية</li>
-                            <li>مدرس مساعد في علم الجريمة والعقاب بالكلية اليمنية السورية للحقوق</li>
+                            <li>شهادة البكالوريوس في الشريعة والقانون من جامعة صنعاء بتقدير امتياز</li>
+                            <li>ماجستير في الإدارة العامة من الكلية العربية السورية بتقدير جيد جداً</li>
+                            <li>دورات متخصصة في التحكيم التجاري الدولي من مركز القاهرة الإقليمي للتحكيم التجاري</li>
+                            <li>دورة متقدمة في صياغة العقود الدولية من أكاديمية الشرق للتدريب القانوني</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>السيرة الذاتية</h2>
+            </div>
+            <div class="cv-container">
+                <div class="cv-item">
+                    <h3>الخبرات العملية</h3>
+                    <p>• مستشار قانوني لعدد من الشركات الكبرى في اليمن منذ 2015</p>
+                    <p>• محامٍ بالاستئناف ومترافع أمام المحكمة العليا منذ 2012</p>
+                    <p>• رئيس فريق الدفاع في العديد من القضايا التجارية الكبرى</p>
+                    <p>• مستشار قانوني لبرنامج الأمم المتحدة الإنمائي (2018-2020)</p>
+                </div>
+                
+                <div class="cv-item">
+                    <h3>المؤتمرات والندوات</h3>
+                    <p>• المشاركة في مؤتمر القانون الدولي في القاهرة 2019</p>
+                    <p>• المتحدث الرئيسي في ندوة "تطور التشريعات التجارية في اليمن" 2018</p>
+                    <p>• عضو اللجنة المنظمة للمؤتمر السنوي للمحامين اليمنيين 2017-2021</p>
+                </div>
+                
+                <div class="cv-item">
+                    <h3>العضوية المهنية</h3>
+                    <p>• عضو نقابة المحامين اليمنيين منذ 2008</p>
+                    <p>• عضو الاتحاد العربي للمحامين</p>
+                    <p>• عضو الجمعية اليمنية للتحكيم التجاري</p>
                 </div>
             </div>
         </div>
@@ -450,61 +788,61 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-file-contract"></i>
+                        <i class="fas fa-file-contract" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>تحرير العقود والصفقات</h3>
-                        <p>صياغة ومراجعة العقود بكافة أنواعها لضمان حقوقك وتجنب النزاعات المستقبلية.</p>
+                        <p>صياغة ومراجعة العقود بكافة أنواعها (التجارية، الدولية، الزواج، الشركات) لضمان حقوقكم وتجنب النزاعات المستقبلية باحترافية عالية.</p>
                     </div>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-pen-fancy"></i>
+                        <i class="fas fa-pen-fancy" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>كتابة العرائض والطعون</h3>
-                        <p>إعداد المذكرات والطلبات والطعون القانونية بدقة واحترافية وفقاً لأحدث الأصول القانونية.</p>
+                        <p>إعداد المذكرات والطلبات والطعون القانونية بدقة واحترافية وفقاً لأحدث الأصول القانونية والمعايير القضائية المتبعة.</p>
                     </div>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-gavel"></i>
+                        <i class="fas fa-gavel" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>الترافع أمام المحاكم</h3>
-                        <p>الترافع أمام كافة المحاكم بجميع درجاتها بما فيها المحكمة العليا بخبرة وكفاءة عالية.</p>
+                        <p>الترافع أمام كافة المحاكم بجميع درجاتها (الابتدائية، الاستئنافية، المحكمة العليا) بخبرة وكفاءة عالية في مختلف أنواع الدعاوى.</p>
                     </div>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>القسمة والتحكيم</h3>
-                        <p>تسوية المنازعات عبر التحكيم والقسمة الشرعية بطريقة تحافظ على العلاقات بين الأطراف.</p>
+                        <p>تسوية المنازعات عبر التحكيم والقسمة الشرعية بطريقة تحافظ على العلاقات بين الأطراف وتضمن حقوق جميع الأطراف.</p>
                     </div>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-comments"></i>
+                        <i class="fas fa-comments" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>الاستشارات القانونية</h3>
-                        <p>تقديم استشارات قانونية متخصصة تغطي كافة المجالات لتوجيهك نحو القرار الصائب.</p>
+                        <p>تقديم استشارات قانونية متخصصة تغطي كافة المجالات (تجارية، جنائية، أحوال شخصية، عقارية) لتوجيهكم نحو القرار الصائب.</p>
                     </div>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-balance-scale"></i>
+                        <i class="fas fa-balance-scale" aria-hidden="true"></i>
                     </div>
                     <div class="service-content">
                         <h3>الدعاوى بمختلف أنواعها</h3>
-                        <p>رفع ومتابعة الدعاوى القضائية بكافة أنواعها بدءاً من إعدادها وحتى تنفيذ الأحكام.</p>
+                        <p>رفع ومتابعة الدعاوى القضائية بكافة أنواعها (تجارية، جنائية، أحوال شخصية، إدارية) بدءاً من إعدادها وحتى تنفيذ الأحكام.</p>
                     </div>
                 </div>
             </div>
@@ -523,59 +861,69 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             </div>
-                            <div>
+                            <div class="contact-text">
                                 <h4>العنوان</h4>
                                 <p>صنعاء - بني الحارث - جوار مجمع دبي</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                             </div>
-                            <div>
+                            <div class="contact-text">
                                 <h4>الهاتف / واتساب</h4>
-                                <p>774968713</p>
+                                <p>774968713 (00967+)</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </div>
-                            <div>
+                            <div class="contact-text">
                                 <h4>البريد الإلكتروني</h4>
                                 <p>sabresuldan@gmail.com</p>
                             </div>
                         </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>أوقات العمل</h4>
+                                <p>السبت إلى الخميس: 8 صباحاً - 4 مساءً</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
                     <h3>أرسل رسالة</h3>
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">الاسم بالكامل</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" required>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
-                            <input type="email" id="email">
+                            <label for="email">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" id="email" name="email">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">الرسالة</label>
-                            <textarea id="message" required></textarea>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn">إرسال الرسالة</button>
                     </form>
                 </div>
@@ -589,28 +937,29 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>عن المكتب</h3>
-                    <p>مكتب مستشار القانوني صبري السلطان يقدم خدمات قانونية متكاملة تتميز بالاحترافية والسرية التالية، مع التركيز على تحقيق أفضل النتائج لعملائنا الكرام.</p>
+                    <p>مكتب مستشار القانوني صبري السلطان يقدم خدمات قانونية متكاملة تتميز بالاحترافية والسرية التامة، مع التركيز على تحقيق أفضل النتائج لعملائنا الكرام من خلال فريق من المحامين المتخصصين في مختلف المجالات القانونية.</p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>روابط سريعة</h3>
                     <ul>
                         <li><a href="#about">عن المكتب</a></li>
+                        <li><a href="#cv">السيرة الذاتية</a></li>
                         <li><a href="#services">خدماتنا</a></li>
                         <li><a href="#contact">اتصل بنا</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>معلومات التواصل</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> صنعاء - بني الحارث - جوار مجمع دبي</p>
-                    <p><i class="fas fa-phone"></i> 774968713</p>
-                    <p><i class="fas fa-envelope"></i> sabresuldan@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> صنعاء - بني الحارث - جوار مجمع دبي</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> 774968713 (00967+)</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> sabresuldan@gmail.com</p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>جميع الحقوق محفوظة &copy; 2023 مكتب المستشار القانوني صبري السلطان</p>
+                <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span> مكتب المستشار القانوني صبري السلطان</p>
             </div>
         </div>
     </footer>
@@ -620,10 +969,10 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
@@ -633,9 +982,9 @@
                 }
             });
         });
-        
+
         // Simple form handling
-        const contactForm = document.querySelector('form');
+        const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -643,6 +992,9 @@
                 this.reset();
             });
         }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
