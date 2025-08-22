@@ -219,6 +219,7 @@
             border: 2px solid var(--secondary);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             font-size: 1.1rem;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -226,6 +227,39 @@
             color: var(--secondary);
             transform: translateY(-3px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #25D366, #128C7E);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #25D366;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 1.1rem;
+            margin-right: 15px;
+        }
+
+        .whatsapp-btn:hover {
+            background: transparent;
+            color: #25D366;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         /* Sections */
@@ -587,13 +621,6 @@
             padding-right: 8px;
         }
 
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 1.05rem;
-        }
-
         /* Responsive */
         @media (max-width: 992px) {
             .hero h1 {
@@ -650,6 +677,17 @@
             .section-title h2 {
                 font-size: 1.9rem;
             }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .whatsapp-btn, .btn {
+                width: 100%;
+                margin: 5px 0;
+                text-align: center;
+            }
         }
 
         @media (max-width: 576px) {
@@ -677,6 +715,27 @@
             .service-card {
                 min-width: 100%;
             }
+        }
+
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -713,6 +772,11 @@
             <h1>حماية حقوقكم القانونية هي رسالتنا وهدفنا</h1>
             <p>مكتب المستشار القانوني صبري السلطان يقدم أرقى الخدمات القانونية والاستشارات المهنية، بنخبة من الخبراء القانونيين لتأمين حقوقكم وضمان مصالحكم.</p>
             <a href="#contact" class="btn">احصل على استشارة مجانية</a>
+            <div class="btn-container">
+                <a href="https://wa.me/967774968713?text=مرحباً، أريد الحصول على استشارة قانونية" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> &nbsp; تواصل عبر واتساب
+                </a>
+            </div>
         </div>
     </section>
 
@@ -723,12 +787,8 @@
                 <h2>عن المستشار</h2>
             </div>
             <div class="about-content">
-                   <div class="section-title">
-                <h2>عن المستشار</h2>
-            </div>
-            <div class="about-content">
                 <div class="about-text">
-                    <h3>المستشار القانوني / صبري السلطان</h3>
+                    <h3>المستشار القانوني / صبري محمد السلطان</h3>
                     <p>محامٍ ومستشار قانوني مخضرم يحمل بين جنباته خبرة قانونية واسعة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية. يتمتع بسجل حافل من النجاحات في القضايا الكبرى والمعقدة.</p>
                     <p>حاصل على درجة الماجستير في الإدارة العامة من الكلية العربية السورية، ودرجة البكالوريوس في الشريعة والقانون من جامعة صنعاء. كما يعمل كمدرس مساعد في علم الجريمة والعقاب بالكلية اليمنية السورية للحقوق.</p>
                     <p>نلتزم في مكتبنا بتقديم خدمات قانونية متكاملة تتميز بالدقة والاحترافية والسرية التامة، مع التركيز على تحقيق أفضل النتائج لعملائنا الكرام من خلال فريق متكامل من المحامين المتخصصين.</p>
@@ -737,7 +797,7 @@
                         <h4>المؤهلات العلمية</h4>
                         <ul>
                             <li>شهادة البكالوريوس في الشريعة والقانون من جامعة صنعاء بتقدير امتياز</li>
-                            <li>ماجستير في الإدارة العامة من الكلية العربية السورية بتقدير جيد جداً</li>
+                            <li>ماجستier في الإدارة العامة من الكلية العربية السورية بتقدير جيد جداً</li>
                             <li>دورات متخصصة في التحكيم التجاري الدولي من مركز القاهرة الإقليمي للتحكيم التجاري</li>
                             <li>دورة متقدمة في صياغة العقود الدولية من أكاديمية الشرق للتدريب القانوني</li>
                         </ul>
@@ -825,7 +885,7 @@
                         <p>تسوية المنازعات عبر التحكيم والقسمة الشرعية بطريقة تحافظ على العلاقات بين الأطراف وتضمن حقوق جميع الأطراف.</p>
                     </div>
                 </div>
-
+             
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-comments" aria-hidden="true"></i>
@@ -905,12 +965,12 @@
                     <h3>أرسل رسالة</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">الاسم بالكامل</label>
+                            <label for="name">الاسم بالكامل *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">رقم الهاتف</label>
+                            <label for="phone">رقم الهاتف *</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
 
@@ -920,11 +980,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="message">الرسالة</label>
+                            <label for="message">الرسالة *</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn">إرسال الرسالة</button>
+                        <button type="submit" class="btn">إرسال عبر واتساب</button>
                     </form>
                 </div>
             </div>
@@ -964,6 +1024,11 @@
         </div>
     </footer>
 
+    <!-- WhatsApp Notification -->
+    <div class="notification" id="whatsappNotification">
+        جاري فتح واتساب لإرسال رسالتك...
+    </div>
+
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -983,12 +1048,45 @@
             });
         });
 
-        // Simple form handling
+        // WhatsApp form handling
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                alert('شكراً لتواصلكم. سنرد عليكم في أقرب وقت ممكن.');
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                // Create WhatsApp message
+                let whatsappMessage = `مرحباً، أنا ${name}%0A`;
+                whatsappMessage += `أريد الاستفسار عن: ${message}%0A%0A`;
+                whatsappMessage += `رقم هاتفي: ${phone}%0A`;
+                
+                if (email) {
+                    whatsappMessage += `بريدي الإلكتروني: ${email}%0A`;
+                }
+                
+                // Create WhatsApp URL
+                const whatsappURL = `https://wa.me/967774968713?text=${whatsappMessage}`;
+                
+                // Show notification
+                const notification = document.getElementById('whatsappNotification');
+                notification.classList.add('show');
+                
+                // Open WhatsApp after a short delay
+                setTimeout(() => {
+                    window.open(whatsappURL, '_blank');
+                    
+                    // Hide notification after another delay
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 3000);
+                }, 1500);
+                
+                // Reset form
                 this.reset();
             });
         }
